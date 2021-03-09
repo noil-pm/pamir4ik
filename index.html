@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Funy app</title>
+        <script>
+            function call() {
+                var name = prompt("Как Вас зовут?");
+                document.getElementById("rslt").innerHTML="Добро пожаловать " + name;
+            }
+        </script>
+        <style>
+            .main{
+                background-color: blue;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                top: 200px;
+                left: 100px;
+            }
+            p{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <input type="button" onclick="call()" value="Нажми на меня">
+            <div class="one"><p id="rslt"></p></p></div>
+        </div>
+    </body>
+</html>
